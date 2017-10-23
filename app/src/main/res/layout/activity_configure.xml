@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/blur_blue"
+    android:scaleType="centerCrop"
+    >
+
+    <TextView
+        android:id="@+id/label_Configure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Configure Favorite Channels"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccentBlue"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        app:layout_constraintGuide_begin="16dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/favorLocationLable"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="Favorite Channel Button"
+        android:textSize="16sp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="28dp"
+        app:layout_constraintTop_toBottomOf="@+id/label_Configure"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/customLabelTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Lable"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/customLabelInput"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/customLabelInput"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="0dp"
+        android:ems="10"
+        android:hint="create your own lable here"
+        android:inputType="textCapCharacters"
+        android:textAlignment="textStart"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/favorLocationLable"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favorLocationLable" />
+
+    <TextView
+        android:id="@+id/channelLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Channel"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customLabelInput"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/customChannelNum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/channelLable"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/customLabelInput"
+        app:layout_constraintRight_toRightOf="@+id/customLabelInput" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:text="2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/b1"
+        app:layout_constraintRight_toRightOf="@+id/customChannelNum" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="1"
+        app:layout_constraintLeft_toRightOf="@+id/b0"
+        app:layout_constraintRight_toLeftOf="@+id/b2"
+        app:layout_constraintTop_toBottomOf="@+id/customChannelNum" />
+
+    <Button
+        android:id="@+id/b0"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBaseline_toBaselineOf="@+id/b1"
+        app:layout_constraintLeft_toLeftOf="@+id/customChannelNum" />
+
+    <Button
+        android:id="@+id/b8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="8"
+        app:layout_constraintBaseline_toBaselineOf="@+id/b7"
+        app:layout_constraintRight_toRightOf="@+id/b5"
+        app:layout_constraintLeft_toLeftOf="@+id/b5" />
+
+    <Button
+        android:id="@+id/b5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="5"
+        app:layout_constraintBaseline_toBaselineOf="@+id/b3"
+        app:layout_constraintRight_toRightOf="@+id/b2"
+        app:layout_constraintLeft_toLeftOf="@+id/b2" />
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="3"
+        app:layout_constraintLeft_toLeftOf="@+id/b0"
+        app:layout_constraintTop_toBottomOf="@+id/b0"
+        app:layout_constraintRight_toRightOf="@+id/b0" />
+
+    <Button
+        android:id="@+id/b4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="4"
+        app:layout_constraintBaseline_toBaselineOf="@+id/b3"
+        app:layout_constraintLeft_toLeftOf="@+id/b1"
+        app:layout_constraintRight_toRightOf="@+id/b1" />
+
+    <Button
+        android:id="@+id/b7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="7"
+        app:layout_constraintBaseline_toBaselineOf="@+id/b6"
+        app:layout_constraintLeft_toLeftOf="@+id/b4"
+        app:layout_constraintRight_toRightOf="@+id/b4"
+        app:layout_constraintHorizontal_bias="0.6" />
+
+    <Button
+        android:id="@+id/b6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="6"
+        app:layout_constraintLeft_toLeftOf="@+id/b3"
+        app:layout_constraintTop_toBottomOf="@+id/b3"
+        app:layout_constraintRight_toRightOf="@+id/b3" />
+
+    <Button
+        android:id="@+id/bChMinus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="CH-"
+        app:layout_constraintBaseline_toBaselineOf="@+id/b9"
+        app:layout_constraintRight_toRightOf="@+id/b8"
+        app:layout_constraintLeft_toLeftOf="@+id/b8"
+        app:layout_constraintHorizontal_bias="0.4" />
+
+    <Button
+        android:id="@+id/b9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="9"
+        app:layout_constraintLeft_toLeftOf="@+id/b6"
+        app:layout_constraintTop_toBottomOf="@+id/b6"
+        app:layout_constraintRight_toRightOf="@+id/b6" />
+
+    <Button
+        android:id="@+id/bChPlus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="CH+"
+        app:layout_constraintBaseline_toBaselineOf="@+id/b9"
+        app:layout_constraintLeft_toLeftOf="@+id/b7"
+        app:layout_constraintRight_toRightOf="@+id/b7"
+        app:layout_constraintHorizontal_bias="0.6" />
+
+    <Button
+        android:id="@+id/bCancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="CANCEL"
+        android:textColor="@color/colorAccentBlue"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/bChPlus"
+        app:layout_constraintRight_toRightOf="@+id/bChPlus" />
+
+    <Button
+        android:id="@+id/bSave"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:textSize="13sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bCancel"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/bChMinus"
+        app:layout_constraintRight_toRightOf="@+id/bChMinus" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/customLabelInput"
+        app:layout_constraintRight_toRightOf="@+id/customLabelInput"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/label_Configure">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:id="@+id/radioLeft"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Left"
+                />
+            <RadioButton
+                android:id="@+id/radioMiddle"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Middle"
+                android:onClick="onRadioButtonClicked"
+                />
+            <RadioButton
+                android:id="@+id/radioRight"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Right"
+                android:layout_gravity="right"/>
+
+
+
+        </RadioGroup>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
